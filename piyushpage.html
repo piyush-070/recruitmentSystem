@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>Registration</header>
+        <h1 class="piyush"></h1>
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" name="Name" class="nameId" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" name="dob" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" name="contact-number" class="contactNo"
+                                placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Address</label>
+                            <input type="text" name="Adress" placeholder="Address with city" required>
+                        </div>
+
+                        <div id="naman" class="input-field">
+                            <label>About me</label>
+                            <input type="text" name="About me" placeholder="Write about your self" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Education Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>C.G.P.A</label>
+                            <input type="number" name="CGPA" placeholder="Enter your percentage" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>12th</label>
+                            <input type="number" name="Percentage 12" placeholder="Enter your percentage" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>10th</label>
+                            <input type="number" name="Percentage 10" placeholder="Enter your percentage" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Role</label>
+                            <input type="text" name="Role" placeholder="Enter your Role" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Enrollment Number</label>
+                            <input type="text" name="Enrollment Number" placeholder="Enter your Enrollment Number"
+                                required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Year of Graduation</label>
+                            <input type="number" name="Year of graduation" placeholder="Enter your Year of Graduation "
+                                required>
+                        </div>
+                    </div>
+
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form second">
+                <div class="details address">
+                    <span class="title"></span>
+                    <span class="title">Skill</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Programming Language</label>
+                            <input type="text" name="Programming Language" placeholder="Languages" required>
+                        </div>
+
+                        <!-- <div class="input-field">
+                            <label>Nationality</label>
+                            <input type="text" placeholder="Enter nationality" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>State</label>
+                            <input type="text" placeholder="Enter your state" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>District</label>
+                            <input type="text" placeholder="Enter your district" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Block Number</label>
+                            <input type="number" placeholder="Enter block number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Ward Number</label>
+                            <input type="number" placeholder="Enter ward number" required>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="details family">
+                    <span class="title">Projects</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Project 1</label>
+                            <input type="text" name="Project 1" placeholder="Enter Projects you have done">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Project 2</label>
+                            <input type="text" name="Project 2" placeholder="Enter Projects you have done">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Working projects</label>
+                            <input type="text" name="Working projects" placeholder="Enter Working projects">
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+
+
+                        <button class="sumbit">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+
+        $(document).ready(function () {
+            $('.nameId').val('ahdasjdhjkashdjkhasjkd');
+        });
+        const form = document.querySelector("form"),
+            nextBtn = form.querySelector(".nextBtn"),
+            backBtn = form.querySelector(".backBtn"),
+            allInput = form.querySelectorAll(".first input");
+
+
+        nextBtn.addEventListener("click", () => {
+            allInput.forEach(input => {
+                if (input.value != "") {
+                    form.classList.add('secActive');
+                } else {
+                    form.classList.remove('secActive');
+                }
+            })
+        })
+
+        backBtn.addEventListener("click", () => form.classList.remove('secActive'));
+
+    </script>
+</body>
+
+</html>

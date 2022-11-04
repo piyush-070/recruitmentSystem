@@ -1,0 +1,258 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    margin-top: -20px;
+    top: 0px;
+    background-color: whitesmoke;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.imag-back {
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background: url('img/bg.jpg');
+    height: 1150px;
+}
+
+.left {
+    display: inline-block;
+    border: 0px solid red;
+    position: absolute;
+    left: 60px;
+    top: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.left img {
+    width: 60px;
+    filter: invert(90%);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.img div {
+    line-height: 19px;
+    font-size: 26px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.mid {
+    display: block;
+    width: 30%;
+    margin: 20px auto;
+    border: 0px solid blue;
+}
+
+.right {
+    position: absolute;
+    right: 34px;
+    top: 20px;
+    display: inline-block;
+    border: 0px solid yellow;
+}
+
+.navbar {
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 38px;
+}
+
+.navbar li {
+    font-size: 20px;
+    display: inline-block;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 34px 20px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+    color: gray;
+}
+
+.container {
+    border: 0px solid green;
+    margin: 144px 59px;
+    padding: 25px 52px;
+    border-radius: 2px;
+    display: flex;
+
+}
+
+.container h1 {
+    font-size: 53px;
+    font-weight: 600;
+    white-space: nowrap;
+    width: 10px;
+    animation: text 10s infinite alternate;
+    overflow: hidden;
+    border-right: 3px solid white
+}
+
+@keyframes text {
+    100% {
+        width: 0ch;
+    }
+
+    50% {
+        width: 33ch;
+    }
+
+}
+
+.btn {
+    margin: 11px 30px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border: 0px solid grey;
+    border-radius: 16px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: gray;
+}
+
+.contaniners {
+    border: 0px solid green;
+    margin: 144px 59px;
+    padding: 46px 44px;
+    border-radius: 2px;
+}
+
+.contaniners .the {
+    color: white;
+    font-size: 52px;
+
+}
+
+.contaniners .way {
+    margin-inline-start: 9px;
+    font-size: 25px;
+}
+
+.secright {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto
+}
+
+.para {
+    padding: 0px 65px;
+    background-color: white;
+    box-shadow: 4px 5px 7px 1px grey;
+    border-radius: 32px;
+}
+
+.sectiontag {
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+}
+
+.centerdiv {
+    height: 166px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.oopp {
+    height: 87px;
+    width: 93px;
+    background-color: white;
+    border-radius: 165px;
+    text-align: center;
+    margin: 13px;
+    line-height: 99px;
+    box-shadow: 1px 4px 4px 4px grey;
+}
+
+.oopp i {
+    transition: all 0.2s linear;
+}
+
+.oopp:hover i {
+    transform: scale(1.4);
+}
+
+.fa-instagram {
+    color: #e84393;
+}
+
+.fa-linkedin {
+    color: #0097e6
+}
+
+.fa-twitter {
+    color: #0097e6
+}
+
+#scrollbtn {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: #fff;
+    background: #000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.fa-arrow-up {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+#scrollbtn:hover {
+    background-color: white;
+}
+
+.loginpage {
+    height: 361px;
+    max-width: 50%;
+    padding-left: 30px;
+    display: flex;
+    padding-top: 66px;
+}
+
+.view {
+    padding: 0px 65px;
+    background-color: white;
+    box-shadow: 4px 5px 7px 1px grey;
+    border-radius: 32px;
+}
+
+.kuchbhi {
+    margin-right: 100px;
+    margin-left: 239px;
+    /* margin-top: 10px; */
+
+}
